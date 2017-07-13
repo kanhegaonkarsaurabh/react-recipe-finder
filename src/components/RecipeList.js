@@ -6,7 +6,7 @@ class RecipeList extends Component {
   renderList() {
     let { recipes } = this.props;
     return recipes.map((recipe, index) => (
-        <RecipeItem key={index} recipe={recipe} />
+        <RecipeItem key={index} recipe={recipe} favrecipe={false} />
     ))
   }
 
